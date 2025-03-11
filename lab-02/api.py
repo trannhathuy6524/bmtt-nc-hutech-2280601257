@@ -7,15 +7,16 @@ from cipher.transposition import TranspositionCipher
 
 app = Flask(__name__)
 
-#CAESAR CIPHER ALGORITHM
+# CAESAR CIPHER ALGORITHM
 caesar_cipher = CaesarCipher()
+
 @app.route("/api/caesar/encrypt", methods=["POST"])
 def caesar_encrypt():
     data = request.json
     plain_text = data["plain_text"]
     key = int(data['key'])
     encrypted_text = caesar_cipher.encrypt_text(plain_text, key)
-    return jsonify({'encrypted_text': encrypted_text})
+    return jsonify({'encrypted_message': encrypted_text})  # Ensure the key is 'encrypted_message'
 
 @app.route("/api/caesar/decrypt", methods=["POST"])
 def caesar_decrypt():
@@ -23,7 +24,7 @@ def caesar_decrypt():
     encrypted_text = data["encrypted_text"]
     key = int(data['key'])
     plain_text = caesar_cipher.decrypt_text(encrypted_text, key)
-    return jsonify({'plain_text': plain_text})
+    return jsonify({'decrypted_message': plain_text})  # Ensure the key is 'decrypted_message'
 
 
 #VIGENERE CIPHER ALGORITHM
