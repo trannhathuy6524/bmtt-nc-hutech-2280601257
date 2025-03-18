@@ -34,7 +34,7 @@
      <string>RSA CIPHER</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="btn_generate">
     <property name="geometry">
      <rect>
       <x>420</x>
@@ -97,7 +97,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QTextEdit" name="txt_plain_text_2">
+   <widget class="QTextEdit" name="txt_cipher_text">
     <property name="geometry">
      <rect>
       <x>170</x>
@@ -127,7 +127,7 @@
      <string>Infomation</string>
     </property>
    </widget>
-   <widget class="QTextEdit" name="txt_plain_text_3">
+   <widget class="QTextEdit" name="txt_infomation">
     <property name="geometry">
      <rect>
       <x>760</x>
@@ -157,7 +157,7 @@
      <string>Signature</string>
     </property>
    </widget>
-   <widget class="QTextEdit" name="txt_plain_text_4">
+   <widget class="QTextEdit" name="txt_signature">
     <property name="geometry">
      <rect>
       <x>760</x>
@@ -167,7 +167,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="btn_encrypt">
     <property name="geometry">
      <rect>
       <x>170</x>
@@ -180,7 +180,7 @@
      <string>Encrypt</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_3">
+   <widget class="QPushButton" name="btn_decrypt">
     <property name="geometry">
      <rect>
       <x>270</x>
@@ -193,11 +193,11 @@
      <string>Decrypt</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_4">
+   <widget class="QPushButton" name="btn_sign">
     <property name="geometry">
      <rect>
       <x>760</x>
-      <y>370</y>
+      <y>380</y>
       <width>93</width>
       <height>28</height>
      </rect>
@@ -206,11 +206,11 @@
      <string>Sign</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_5">
+   <widget class="QPushButton" name="btn_verify">
     <property name="geometry">
      <rect>
       <x>860</x>
-      <y>370</y>
+      <y>380</y>
       <width>93</width>
       <height>28</height>
      </rect>
